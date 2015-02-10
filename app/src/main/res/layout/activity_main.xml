@@ -10,16 +10,15 @@
                 android:background="#ffff1b2d">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="122dp"
         android:id="@+id/linearLayout"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout">
 
         <Button
             android:layout_width="183dp"
@@ -94,9 +93,9 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="31dp"
         android:layout_below="@+id/tableLayout"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout">
 
         <TextView
             android:layout_width="match_parent"
@@ -116,7 +115,7 @@
             android:text="Medium Text"
             android:id="@+id/textView3"
             android:layout_row="0"
-            android:layout_column="1"
+            android:layout_column="0"
             android:padding="10dp"
             android:layout_columnSpan="1"
             android:textColor="#ffffffff"/>
